@@ -1,0 +1,13 @@
+.weather {
+    width: 600px;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+    color: #1d1d1d;
+    margin: 20px auto 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
