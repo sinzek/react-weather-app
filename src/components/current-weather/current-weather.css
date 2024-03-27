@@ -1,13 +1,57 @@
 .weather {
-    width: 600px;
-    border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
-    color: #1d1d1d;
-    margin: 20px auto 0 auto;
+  width: 600px;
+  border-radius: 6px;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  color: #1d1d1d;
+  margin: 30px auto 0 auto;
+  overflow: auto; /* fixes child margins lol */
+  display: flex;
+  flex-direction: column;
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.city-name {
+  color: rgb(25 25 25);
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Trebuchet MS";
+  letter-spacing: 0px;
+  transition: 700ms ease;
+  font-weight: 300;
+  color: rgb(11, 81, 117);
+}
+
+.city-name:hover {
+  color: rgb(3, 24, 35);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.city-text {
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.temperature {
+  color: rgb(11, 81, 117);
+  font-size: 60px;
+  font-family: "Trebuchet MS";
+  letter-spacing: -3px;
+}
+
+.weather-description {
+  color: rgb(11, 81, 117);
+  font-size: 30px;
+  font-family: "Trebuchet MS";
+}
+
+.weather-icon {
+  width: 200px;
+  height: 200px;
 }
